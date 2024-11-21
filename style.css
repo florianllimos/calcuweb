@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 30px;
+  font-family: 'Righteous', cursive;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  background-image: url("media/background-dark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.calculator {
+  width: 80%;
+  border-radius: 10px;
+  padding: 5px;
+  background: #272727;
+  box-shadow: 20px 20px 60px #242424, -20px -20px 60px #3a3a3a;
+}
+
+.calc {
+  padding: 30px;
+  box-shadow: 0 0 15px black;
+  display: grid;
+  grid-template-columns: [a] 1fr [b] 1fr [c] 1fr [d] 1fr [e];
+  grid-template-rows: [a] 1fr [b] 1fr [c] 1fr [d] 1fr [e] 1fr [f] 1fr [g];
+  grid-gap: 10px;
+
+}
+
+/* LIGNE 1 */
+/* LIGNE 1 */
+/* LIGNE 1 */
+
+#display {
+  grid-row: a / b;
+  grid-column: a / d;
+  font-size: 20px;
+  color: red;
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+}
+
+.delete {
+  grid-row: a / b;
+  color: red;
+  grid-column: d / e;
+}
+
+/* LIGNE 2 */
+/* LIGNE 2 */
+/* LIGNE 2 */
+
+.clear {
+  grid-row: b / c;
+  grid-column: a / d;
+  font-size: 30px;
+  color: red;
+}
+
+.divide {
+  grid-row: b / c;
+  grid-column: d / e;
+}
+
+/* LIGNE 3 */
+/* LIGNE 3 */
+/* LIGNE 3 */
+
+.seven {
+  grid-row: c / d;
+  grid-column: a / b;
+}
+
+.eight {
+  grid-row: c / d;
+  grid-column: b / c;
+}
+
+.nine {
+  grid-row: c / d;
+  grid-column: c / d;
+}
+
+.multiply {
+  grid-row: c / d;
+  grid-column: d / e;
+}
+
+/* LIGNE 4 */
+/* LIGNE 4 */
+/* LIGNE 4 */
+
+.four {
+  grid-row: d / e;
+  grid-column: a / b;
+}
+
+.five {
+  grid-row: d / e;
+  grid-column: b / c;
+}
+
+.six {
+  grid-row: d / e;
+  grid-column: c / d;
+}
+
+.less {
+  grid-row: d / e;
+  grid-column: d / e;
+}
+
+/* LIGNE 5 */
+/* LIGNE 5 */
+/* LIGNE 5 */
+
+.one {
+  grid-row: e / f;
+  grid-column: a / b;
+}
+
+.two {
+  grid-row: e / f;
+  grid-column: b / c;
+}
+
+.three {
+  grid-row: e / f;
+  grid-column: c / d;
+}
+
+.more {
+  grid-row: e / f;
+  grid-column: d / e;
+}
+
+/* LIGNE 6 */
+/* LIGNE 6 */
+/* LIGNE 6 */
+
+.zero {
+  grid-row: f / g;
+  grid-column: b / c;
+}
+
+.point {
+  grid-row: f / g;
+  grid-column: a / b;
+}
+
+.equal {
+  grid-row: f / g;
+  grid-column: c / e;
+  background-color: rgb(4, 190, 4);
+  font-size: 30px;
+}
+
+/* */
+/* */
+/* */
+
+button {
+  border-radius: 100px;
+  border: none;
+  height: 50px;
+  background-color: rgb(34, 34, 34);
+}
+
+@media screen and (min-width: 600px) {
+  .calculator {
+    width: 500px;
+  }
+}
+
+a {
+    text-transform: none;
+    color: #242424;
+}
+  
+footer {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+  
+p {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+  
+footer ul {
+    margin-left: auto;
+    width: fit-content;
+    margin-right: auto;
+}
+  
+footer li {
+    display: inline;
+}
+  
+footer img {
+    width: 16px;
+    border-radius: 10px;
+    padding: 5px;
+    background: #272727;
+    box-shadow: 20px 20px 60px #242424, -20px -20px 60px #3a3a3a;
+    padding: 10px;
+}
+  
+footer img:hover {
+    box-shadow: 0 0 15px white;
+    transition: 500ms;
+}
+
+footer a {
+  color: #24242400;
+}
+
+footer p {
+  font-size: 14px;
+}
