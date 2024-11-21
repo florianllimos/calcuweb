@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcuweb</title>
+      <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/calculatrice.png" />
+</head>
+<body>
+  <div class="calculator">
+    <div class="calc">
+      <input type="text" id="display" disabled>
+      <button onclick="clearDisplay()" class="clear">C</button>
+      <button onclick="appendToDisplay('7')" class="seven">7</button>
+      <button onclick="appendToDisplay('8')" class="eight">8</button>
+      <button onclick="appendToDisplay('9')" class="nice">9</button>
+      <button onclick="appendToDisplay('+')" class="plus">+</button>
+      <button onclick="appendToDisplay('4')" class="four">4</button>
+      <button onclick="appendToDisplay('5')" class="five">5</button>
+      <button onclick="appendToDisplay('6')" class="six">6</button>
+      <button onclick="appendToDisplay('-')" class="less">-</button>
+      <button onclick="appendToDisplay('1')" class="one">1</button>
+      <button onclick="appendToDisplay('2')" class="two">2</button>
+      <button onclick="appendToDisplay('3')" class="three">3</button>
+      <button onclick="appendToDisplay('*')" class="multiply">*</button>
+      <button onclick="appendToDisplay('0')" class="zero">0</button>
+      <button onclick="appendToDisplay('.')" class="point">,</button>
+      <button onclick="backspace()" class="delete">D</button>
+      <button onclick="calculateResult()" class="equal">=</button>
+      <button onclick="appendToDisplay('/')" class="divide">/</button>
+    </div>
+  </div>
+  <footer>
+    <div class="container-home-social-link" role="navigation" aria-label="Liens vers les réseaux sociaux">
+        <ul role="menu" class="ul-social-link">
+          <li role="menuitem">
+            <a href="https://www.instagram.com/f.lmss/?hl=fr" aria-label="Lien vers mon profil Instagram" title="Lien vers mon profil Instagram" target="_blank">
+              <img src="media/instagram.png" id="instagram" alt="Icône Instagram" title="Instagram">
+            </a>
+          </li>  
+          <li role="menuitem">
+            <a href="https://www.facebook.com/florian.llimos/" aria-label="Lien vers mon profil Facebook" title="Lien vers mon profil Facebook" target="_blank">
+              <img src="media/facebook.png" id="facebook" alt="Icône Facebook" title="Facebook">
+            </a>
+          </li>
+          <li role="menuitem">
+            <a href="https://fr.linkedin.com/in/florian-llimos-a27944231" aria-label="Lien vers mon profil LinkedIn" title="Lien vers mon profil LinkedIn" target="_blank">
+              <img src="media/linkedin.png" id="linkedin" alt="Icône LinkedIn" title="LinkedIn">
+            </a>
+          </li>
+          <li role="menuitem">
+            <a href="https://github.com/florianllimos" aria-label="Lien vers mon profil GitHub" title="Lien vers mon profil GitHub" target="_blank">
+              <img src="media/github.png" id="github" alt="Icône GitHub" title="GitHub">
+            </a>
+          </li>
+          <li role="menuitem">
+            <a href="https://codepen.io/llimosf-the-sasster" aria-label="Lien vers mon profil Codepen" title="Lien vers mon profil Codepen" target="_blank">
+              <img src="media/codepen.png" id="codepen" alt="Icône Codepen" title="Codepen">
+            </a>
+          </li>
+          <li role="menuitem">
+            <a href="tel:0622005584" aria-label="Lien pour me téléphoner" title="Lien pour me téléphoner">
+              <img src="media/telephone.png" id="telephone" alt="Icône téléphone" title="téléphone">
+            </a>
+          </li>
+          <li role="menuitem">
+            <a href="mailto:llimosflorian1@gmail.com" aria-label="Lien pour m'envoyer un e-mail" title="Lien pour m'envoyer un e-mail">
+              <img src="media/mail.png" id="mail" alt="Icône e-mail" title="E-mail">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p>Copyright 2024 Florian Llimos</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
